@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341E10F36BAC1C832778FBBF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14C79ED3A66F81110660ECE /* Pods.framework */; };
 		8BD2D59E1C8D04CD002CFA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2D59D1C8D04CD002CFA65 /* AppDelegate.swift */; };
 		8BD2D5A01C8D04CD002CFA65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD2D59F1C8D04CD002CFA65 /* ViewController.swift */; };
 		8BD2D5A31C8D04CD002CFA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD2D5A11C8D04CD002CFA65 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FB2DAD34EEFADB02797B58B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8BD2D59A1C8D04CD002CFA65 /* AlabamaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlabamaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD2D59D1C8D04CD002CFA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BD2D59F1C8D04CD002CFA65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8BD2D5B91C8D04CD002CFA65 /* AlabamaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlabamaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BD2D5BD1C8D04CD002CFA65 /* AlabamaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlabamaAppUITests.swift; sourceTree = "<group>"; };
 		8BD2D5BF1C8D04CD002CFA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD3929F27B7FE0A41F0684C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D14C79ED3A66F81110660ECE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341E10F36BAC1C832778FBBF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E75BF789C7C20CD9B190282 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3929F27B7FE0A41F0684C /* Pods.debug.xcconfig */,
+				3FB2DAD34EEFADB02797B58B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8BD2D5911C8D04CD002CFA65 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				8BD2D5B11C8D04CD002CFA65 /* AlabamaAppTests */,
 				8BD2D5BC1C8D04CD002CFA65 /* AlabamaAppUITests */,
 				8BD2D59B1C8D04CD002CFA65 /* Products */,
+				2E75BF789C7C20CD9B190282 /* Pods */,
+				EF2A9234960B86467BCB401B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = AlabamaAppUITests;
 			sourceTree = "<group>";
 		};
+		EF2A9234960B86467BCB401B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14C79ED3A66F81110660ECE /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BD2D5C21C8D04CD002CFA65 /* Build configuration list for PBXNativeTarget "AlabamaApp" */;
 			buildPhases = (
+				8F0B8B519AFC50255FEE1C1B /* Check Pods Manifest.lock */,
 				8BD2D5961C8D04CD002CFA65 /* Sources */,
 				8BD2D5971C8D04CD002CFA65 /* Frameworks */,
 				8BD2D5981C8D04CD002CFA65 /* Resources */,
+				5A7CCC011108E107ADAEB93D /* Embed Pods Frameworks */,
+				AF87351A6A352B84D07627A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A7CCC011108E107ADAEB93D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F0B8B519AFC50255FEE1C1B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF87351A6A352B84D07627A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BD2D5961C8D04CD002CFA65 /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		8BD2D5C31C8D04CD002CFA65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD3929F27B7FE0A41F0684C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlabamaApp/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		8BD2D5C41C8D04CD002CFA65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB2DAD34EEFADB02797B58B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlabamaApp/Info.plist;
@@ -484,6 +561,7 @@
 				8BD2D5C41C8D04CD002CFA65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BD2D5C51C8D04CD002CFA65 /* Build configuration list for PBXNativeTarget "AlabamaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				8BD2D5C71C8D04CD002CFA65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BD2D5C81C8D04CD002CFA65 /* Build configuration list for PBXNativeTarget "AlabamaAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				8BD2D5CA1C8D04CD002CFA65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

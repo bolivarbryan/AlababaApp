@@ -1,0 +1,7 @@
+app_identifier "com.alamabapizza.alpha.AlabamaApp" # The bundle identifier of your app
+apple_id "bryan.andres.bolivar@gmail.com" # Your Apple email address
+
+team_id "K87XPR878Y"  # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/docs/Appfile.md
