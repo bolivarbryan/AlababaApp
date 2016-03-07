@@ -262,7 +262,7 @@ lane :beta_hockeyapp do
     build_number: ENV["BUILD_NUMBER"]
   )
   # Push to Hockeyapp as Beta release
-  publish_hockey(release_type: "0")
+  publish_testflight(release_type: "0")
 end
 
 end
